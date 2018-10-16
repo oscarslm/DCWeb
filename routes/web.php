@@ -12,5 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('index');
+})->name('inicio');
+
+Route::get('/somos', function () {
+    return view('nosotros');
+})->name('nosotros');
+
+Route::get('/portafolio', function () {
+    return view('portafolio');
+})->name('portafolio');
+
+Route::get('/contacto', function () {
+    return view('contacto');
+})->name('contacto');
