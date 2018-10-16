@@ -48,6 +48,10 @@
 			
 		</section>
 
+		<footer id="footer">
+			
+		</footer>
+
 	</div><!--#wrapper-->
 	
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->

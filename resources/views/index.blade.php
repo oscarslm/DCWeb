@@ -10,6 +10,14 @@
 	      position: relative;
 	      height: 100%;
 	    }
+	    body {
+	      background: #eee;
+	      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	      font-size: 14px;
+	      color:#000;
+	      margin: 0;
+	      padding: 0;
+	    }
 	    .swiper-container {
 	      width: 100%;
 	      height: 100%;
@@ -41,9 +49,10 @@
 		<div class="swiper-container">
 		    <div class="swiper-wrapper">
 		    	<div class="swiper-slide" style="background-image:url('{{ asset('img/coding-html5.jpg') }}')">
-		    		<h1 class="text-center">Diseño web</h1>
-		    		<div class="clearfix"></div>
-					<h4 class="text-center">Somos especialistas en diseño web, diseño de páginas web y posicionamiento SEO en México.</h4>
+		    		<div class="container">
+		    			<h1 class="text-center">Diseño web</h1>
+						<h4 class="text-center">Somos especialistas en diseño web, diseño de páginas web y posicionamiento SEO en México.</h4>
+		    		</div>
 		    	</div><!--.swiper-wrapper-->
 		    	<div class="swiper-slide" style="background-image:url('{{ asset('img/coding-html5.jpg') }}')">
 		    		Slide 2
