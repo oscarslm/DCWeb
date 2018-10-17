@@ -1,3 +1,6 @@
+@php
+	$detect = new \Mobile_Detect;
+@endphp
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
 <head>
@@ -23,19 +26,16 @@
 
 	<div id="wrapper">
 
-		<header id="header">
-		    <div class="container-fluid clearfix">
-		        <h1 id="logo">DCWeb</h1>
-		        <nav>
-		            <a href="{{ URL('/') }}">Inicio</a>
-		            <a href="{{ route('nosotros') }}">Somos</a>
-		            <a href="{{ route('portafolio') }}">Portafolio</a>
-		            <a href="{{ route('contacto') }}">Contacto</a>
-		        </nav>
-		    </div><!--.container-fluid-->
-		</header>
+		<!-- Header
+		=================================-->
+		@include('includes.header')
 
+		<!-- Slider
+		=================================-->
 		@yield('slider')
+
+		<!-- Page-title 
+		=================================-->
 		@yield('page-title')
 		
 		<section id="content">
@@ -62,9 +62,9 @@
     <!-- Parrallax CSS -->
 	<script type="text/javascript" src="{{ asset('js/parallax.min.js') }}"></script>
 
-    @stack('js')
-
     <!-- Functions JS -->
     <script type="text/javascript" src="{{ asset('js/functions.js') }}"></script>
+
+    @stack('js')
 </body>
 </html>
