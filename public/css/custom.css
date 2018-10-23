@@ -13,11 +13,21 @@
         -ms-animation: fadein 2000ms; /* Internet Explorer */
          -o-animation: fadein 2000ms; /* Opera < 12.1 */
             animation: fadein 2000ms;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+#page-title {
+    position: relative;
+    padding: 50px 0;
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #EEE;
 }
 #content {
 	position: relative;
     overflow: hidden;
     background-color: #FFFFFF;
+    flex: 1 0 auto;
 }
 .content-wrap {
 	position: relative;
@@ -138,6 +148,8 @@ header.sticky nav a {
 /*Footer*/
 #footer {
 	position: relative;
+	background-color: #444444;
+	border-top: 5px solid rgba(0,0,0,0.2);
 }
 
 

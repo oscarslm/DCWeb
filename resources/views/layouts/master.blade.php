@@ -48,9 +48,9 @@
 			
 		</section>
 
-		<footer id="footer">
-			
-		</footer>
+		<!-- Footer
+		=================================-->
+		@include('includes.footer')
 
 	</div><!--#wrapper-->
 	
