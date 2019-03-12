@@ -22,7 +22,7 @@ services:
             MYSQL_PASSWORD: "root"
         volumes:
           - data_dcweb:/var/lib/mysql
-        container_name: mysql_dcweb
+        container_name: mysql
 
     mailhog:
         image: mailhog/mailhog
